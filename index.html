@@ -87,6 +87,12 @@
         <h1>Buttons</h1>
         <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
         <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <div data-hyb-ssp-in-image-overlay="5f0352b87bc72f10508a996f" style="margin-top: 35px;">
+            <div class="banner" style="width: 300px; height: 300px;">
+                <img class="image" style="width: 300px; height: 300px;" src="https://gallery.hybrid.ai/examples/test-inimage-vox/img/main.jpg?v=3" alt="Page main">
+            </div>
+        </div>
+
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
@@ -158,5 +164,19 @@
     <!-- Eruda is console for mobile browsers -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
+    <script type="text/javascript">
+        if (typeof window._tx === "undefined") {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://st.hbrd.io/ssp.js?t=" + new Date().getTime();
+            (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(s);
+        }
+        window._tx = window._tx || {};
+        window._tx.cmds = window._tx.cmds || [];
+        window._tx.cmds.push(function () {
+            window._tx.init();
+        });
+    </script>
 </body>
 </html>
