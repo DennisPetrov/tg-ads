@@ -67,19 +67,35 @@
         <div align="center">
             <a href="https://ton.org/"><img width="48" src="./assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
-        <h1>
-            Vox test ads telegram mini app
-        </h1>
+        <h1>Modals</h1>
+        <button onclick="Telegram.WebApp.showAlert('Hello World!');">Launch Alert</button>
+        <button onclick="showPopup();">Launch Popup</button>
+
+        <h1>Links</h1>
+        <ul>
+            <li>
+                <a href="javascript:Telegram.WebApp.openTelegramLink('https://t.me/trendingapps');">Open link within Telegram</a>
+            </li>
+            <li>
+                <a href="javascript:Telegram.WebApp.openLink('https://ton.org/');">Open link in external browser</a>
+            </li>
+            <li>
+                <a href="javascript:Telegram.WebApp.openLink('https://telegra.ph/api',{try_instant_view:true});">Open link inside Telegram webview</a>
+            </li>
+        </ul>
+
+        <h1>Buttons</h1>
+        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
+        <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <div data-hyb-ssp-ad-place="67861e6a4d506ebbc4d0bda4"></div>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est porro optio quod molestias veniam laborum maiores fugiat delectus facilis, corporis suscipit error sint vitae unde cupiditate, aliquid eum ex.
         </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est porro optio quod molestias veniam laborum maiores fugiat delectus facilis, corporis suscipit error sint vitae unde cupiditate, aliquid eum ex.
-        </p>
-        <div data-hyb-ssp-ad-place="67bd97264d506ef134e7aecf" style="min-height: 250px;"></div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est porro optio quod molestias veniam laborum maiores fugiat delectus facilis, corporis suscipit error sint vitae unde cupiditate, aliquid eum ex.
-        </p>
+        <div data-hyb-ssp-in-image-overlay="5f0352b87bc72f10508a996f" style="margin-top: 35px;">
+            <div class="banner" style="width: 300px; height: 300px;">
+                <img class="image" style="width: 300px; height: 300px;" src="https://placehold.co/300x300" alt="Page main">
+            </div>
+        </div>
 
     </main>
     <div id="viewport"></div>
