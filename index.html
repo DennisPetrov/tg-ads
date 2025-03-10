@@ -81,6 +81,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est porro optio quod molestias veniam laborum maiores fugiat delectus facilis, corporis suscipit error sint vitae unde cupiditate, aliquid eum ex.
         </p>
 
+        <div class="in-image-place">
+            <img src="./assets/raptor.jpeg" width="300">
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est porro optio quod molestias veniam laborum maiores fugiat delectus facilis, corporis suscipit error sint vitae unde cupiditate, aliquid eum ex.
+        </p>
+
+        <div data-hyb-ssp-inline-in-content-video="67c9a2ce4d506e831cf7c10c"></div>
+
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
@@ -163,7 +173,19 @@
         window._tx = window._tx || {};
         window._tx.cmds = window._tx.cmds || [];
         window._tx.cmds.push(function () {
-            window._tx.init();
+            window._tx.integrateInImage({
+                placeId: "67c8022a7bc72f7914fcc9a4",
+                imageSelector: ".in-image-place img",
+            });
+            window._tx.initInContentVideo({
+                width: 300,
+                height: 169,
+            });
+            window._tx.init({
+                inImageMinWidth: 200,
+                inImageMinHeightDesktop: 149,
+                inImageMinHeightMobile: 149,
+            });
         });
     </script>
 </body>
